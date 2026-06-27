@@ -37,3 +37,43 @@
     transform: translateY(0);
   }
 }
+
+/* GAYA TOMBOL WHATSAPP (Tambahkan di file CSS Anda) */
+.btn-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #25D366; /* Warna khas WhatsApp */
+    color: #ffffff !important; /* !important memastikan warna teks tetap putih */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 12px 28px;
+    border-radius: 50px; /* Membuat tombol berbentuk kapsul */
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* Efek ketika kursor diarahkan ke tombol (Hover) */
+.btn-whatsapp:hover {
+    background-color: #20ba5a; 
+    transform: translateY(-2px); 
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+    text-decoration: none;
+}
+
+/* Efek ketika tombol diklik (Active) */
+.btn-whatsapp:active {
+    transform: translateY(1px);
+    box-shadow: 0 3px 10px rgba(37, 211, 102, 0.4);
+}
+
+/* Gaya untuk ikon SVG di dalam tombol */
+.btn-whatsapp svg {
+    margin-right: 10px;
+    fill: currentColor;
+    display: inline-block;
+    vertical-align: middle;
+}
