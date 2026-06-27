@@ -172,10 +172,6 @@ const ADMIN_CONFIG = {
       explanation: "Adaptabilitas tinggi terhadap teknologi krusial bagi akselerasi kinerja modern."
     }
   ],
-
-  // ==========================================
-  // DATABASE 105 BUTIR SOAL PREMIUM SKD PART 1
-  // ==========================================
   tryoutQuestions: [
     // --- TWK (1-30) ---
     {
@@ -204,7 +200,7 @@ const ADMIN_CONFIG = {
         "Kedisiplinan"
       ],
       answer: 2,
-      explanation: "Irma melanggar nilai tanggung jawab. Tanggung jawab sebagai Front Officer menuntutnya untuk menyelesaikan kendala pelayanan dengan tuntas sampai akhir, bukan melarikan diri atau melemparkan tugas di tengah jalan ketika menghadapi situasi sulit."
+      explanation: "Irma melanggar nilai tanggung jawab. Tanggung jawab sebagai Front Officer menuntutnya untuk menyelesaikan kendala pelayanan dengan tuntas sampai akhir, bukan melarikan diri."
     },
     {
       id: 3,
@@ -344,7 +340,7 @@ const ADMIN_CONFIG = {
         "Mahkamah Agung"
       ],
       answer: 4,
-      explanation: "Pemberian grasi (pengurangan hukuman) dan rehabilitasi (pemulihan nama baik) memerlukan pertimbangan hukum dari lembaga yudikatif tertinggi, yaitu Mahkamah Agung."
+      explanation: "Pemberian grasi (pengurangan hukuman) and rehabilitasi (pemulihan nama baik) memerlukan pertimbangan hukum dari lembaga yudikatif tertinggi, yaitu Mahkamah Agung."
     },
     {
       id: 13,
@@ -715,7 +711,7 @@ const ADMIN_CONFIG = {
     {
       id: 39,
       category: "Tes Inteligensia Umum (TIU)",
-      question: "Toko E, F, G, H, I, J disusun berbaris. Toko G di antara H dan E. Toko F di ujung kiri. Toko J di sebelah kanan E. Toko I ingin berjauhan dengan H. Jika toko J dipindahkan ke ujung kiri, urutannya menjadi...",
+      question: "Toko E, F, G, H, I, J disusun berbaris. Toko G di antara H and E. Toko F di ujung kiri. Toko J di sebelah kanan E. Toko I ingin berjauhan dengan H. Jika toko J dipindahkan ke ujung kiri, urutannya menjadi...",
       options: [
         "J-F-G-H-E-I",
         "J-I-H-E-G-F",
@@ -1351,7 +1347,7 @@ const ADMIN_CONFIG = {
         "Menanyakan kepada rekan kerja lain yang sudah datang untuk melayaninya.",
         "Menginformasikan jam operasional pelayanan dan memintanya menunggu.",
         "Langsung memberikan pelayanan penuh tanpa memeriksa kelengkapan.",
-        "Menanyakan keperluannya, memeriksa kelengkapan berkasnya, memandu antrean, lalu melayaninya setelah sistem aktif."
+        "Menanyakan keperluannya, memeriksa kelengkapan berkasnya, menginformasikan tempat pengambilan nomor antrean, dan memintanya bersabar."
       ],
       answer: 4,
       explanation: "Membantu pelanggan memeriksa kelengkapan administrasi sebelum jam operasional dimulai mengoptimalkan waktu tunggu pelanggan dan mencegah kesalahan berkas."
@@ -1573,7 +1569,7 @@ const ADMIN_CONFIG = {
       options: [
         "Meminta maaf kepada manajer tersebut atas kurang akuratnya data yang dikirim, lalu berjanji mengirim revisi laporan dan menegur dengan keras.",
         "Meminta maaf kepada manajer tersebut atas kurang akuratnya data yang dikirim, lalu berjanji mengirim revisi laporan sambil menyampaikan kronologis.",
-        "Meminta maaf kepada manajer tersebut atas kurang akuratnya data, berjanji mengirimkan revisi segera, lalu berdiskusi membimbing staf tersebut agar mengerti kesalahannya.",
+        "Meminta maaf kepada manajer tersebut atas kurang akuratnya data, berjanji mengirimkan resmi segera, lalu berdiskusi membimbing staf tersebut agar mengerti kesalahannya.",
         "Meminta maaf kepada manajer tersebut atas kurang akuratnya data yang dikirim, lalu berjanji mengirim revisi laporan sambil melaporkan kelalaian divisi lain.",
         "Meminta maaf kepada manajer tersebut atas kurang akuratnya data yang dikirim, lalu menjanjikan laporan revisi dikirim sendiri oleh staf bersangkutan."
       ],
@@ -1613,7 +1609,7 @@ const ADMIN_CONFIG = {
       category: "Tes Karakteristik Pribadi (TKP) - Sosial Budaya",
       question: "Kawan Anda memiliki istri yang akan melahirkan. Karena tidak memiliki biaya rumah sakit, maka dia meminjam uang dari Anda, padahal uang Anda hanya cukup untuk kebutuhan sehari-hari. Maka yang akan Anda lakukan...",
       options: [
-        "Saya meminta maaf dan mengatakan sebenarnya bahwa saya tidak punya uang untuk dipinjamkan.",
+        "Saya meminta maaf and mengatakan sebenarnya bahwa saya tidak punya uang untuk dipinjamkan.",
         "Saya pinjamkan sisa uang saya yang sedikit tersebut.",
         "Saya menolak meminjamkan uang saya karena itu hanya cukup untuk kebutuhan sehari-hari.",
         "Saya akan memberikan solusi dengan membantunya mencarikan bantuan pinjaman darurat dari rekan atau koperasi.",
@@ -1666,30 +1662,6 @@ const ADMIN_CONFIG = {
     }
   ]
 };
-
-}
-  
-  <!-- ========================================== -->
-  <!-- FIREBASE CONFIGURATION & INITIALIZATION -->
-  <!-- ========================================== -->
-    const firebaseConfig = {
-      apiKey: "AIzaSyBJamJtUuOxMZ4I0YFVHeINwg33ntFc8ys",
-      authDomain: "infoprivatalfaiz.firebaseapp.com",
-      projectId: "infoprivatalfaiz",
-      storageBucket: "infoprivatalfaiz.firebasestorage.app",
-      messagingSenderId: "1091495950544",
-      appId: "1:1091495950544:web:23cd3be0d61e8b865dc6d5",
-      measurementId: "G-MTY0N4JM20"
-    }; 
-
-    // Initialize Firebase
-    if (!firebase.apps.length) {
-      firebase.initializeApp(firebaseConfig);
-    }
-    const auth = firebase.auth();
-    const db = firebase.firestore();
-    const appId = "infoprivatalfaiz";
- },
 
 // Global State
 let currentUser = null;
@@ -1880,35 +1852,41 @@ function handleAuthSubmit(e) {
   const email = document.getElementById('auth-email').value;
   const pass = document.getElementById('auth-password').value;
 
-  if (authMode === 'login') {
-    auth.signInWithEmailAndPassword(email, pass)
-      .then(() => {
-        showAlert("Selamat datang kembali! Anda berhasil masuk.");
-        closeAuthModal();
-      })
-      .catch(err => {
-        showAlert(`Gagal Masuk: ${err.message}`);
-      });
+  if (typeof auth !== 'undefined' && auth !== null) {
+    if (authMode === 'login') {
+      auth.signInWithEmailAndPassword(email, pass)
+        .then(() => {
+          showAlert("Selamat datang kembali! Anda berhasil masuk.");
+          closeAuthModal();
+        })
+        .catch(err => {
+          showAlert(`Gagal Masuk: ${err.message}`);
+        });
+    } else {
+      auth.createUserWithEmailAndPassword(email, pass)
+        .then(() => {
+          showAlert("Registrasi akun baru berhasil! Anda otomatis masuk.");
+          closeAuthModal();
+        })
+        .catch(err => {
+          showAlert(`Gagal Daftar: ${err.message}`);
+        });
+    }
   } else {
-    auth.createUserWithEmailAndPassword(email, pass)
-      .then(() => {
-        showAlert("Registrasi akun baru berhasil! Anda otomatis masuk.");
-        closeAuthModal();
-      })
-      .catch(err => {
-        showAlert(`Gagal Daftar: ${err.message}`);
-      });
+    showAlert("Sistem otentikasi Firebase tidak tersedia di server saat ini.");
   }
 }
 
 function logoutUser() {
-  auth.signOut().then(() => {
-    showAlert("Berhasil keluar dari akun.");
-    hasAccessToTryout = false;
-    document.getElementById('tryout-simulator-panel').classList.add('hidden');
-    document.getElementById('tryout-results-panel').classList.add('hidden');
-    document.getElementById('tryout-purchase-screen').classList.remove('hidden');
-  });
+  if (typeof auth !== 'undefined' && auth !== null) {
+    auth.signOut().then(() => {
+      showAlert("Berhasil keluar dari akun.");
+      hasAccessToTryout = false;
+      document.getElementById('tryout-simulator-panel').classList.add('hidden');
+      document.getElementById('tryout-results-panel').classList.add('hidden');
+      document.getElementById('tryout-purchase-screen').classList.remove('hidden');
+    });
+  }
 }
 
 // 10-Item Practice Quiz Controllers
@@ -2077,23 +2055,27 @@ function calculateQuizResult() {
 }
 
 function saveUserQuizScore(uid, score, correct, accuracy) {
-  db.collection('artifacts').doc(appId).collection('users').doc(uid).collection('quiz_history').add({
-    score: score,
-    correctCount: correct,
-    accuracy: accuracy,
-    timestamp: firebase.firestore.FieldValue.serverTimestamp()
-  });
+  if (typeof db !== 'undefined' && db !== null) {
+    db.collection('artifacts').doc(appId).collection('users').doc(uid).collection('quiz_history').add({
+      score: score,
+      correctCount: correct,
+      accuracy: accuracy,
+      timestamp: firebase.firestore.FieldValue.serverTimestamp()
+    }).catch(e => console.error("Gagal menyimpan hasil kuis:", e));
+  }
 }
 
 function loadUserData(uid) {
-  db.collection('artifacts').doc(appId).collection('users').doc(uid).collection('quiz_history')
-    .orderBy('timestamp', 'desc').limit(1).get()
-    .then(snapshot => {
-      if (!snapshot.empty) {
-        const data = snapshot.docs[0].data();
-        showAlert(`Halo! Skor latihan terakhir Anda di database kami adalah ${data.score} (${data.correctCount} Soal Benar)`);
-      }
-    }).catch(() => {});
+  if (typeof db !== 'undefined' && db !== null) {
+    db.collection('artifacts').doc(appId).collection('users').doc(uid).collection('quiz_history')
+      .orderBy('timestamp', 'desc').limit(1).get()
+      .then(snapshot => {
+        if (!snapshot.empty) {
+          const data = snapshot.docs[0].data();
+          showAlert(`Halo! Skor latihan terakhir Anda di database kami adalah ${data.score} (${data.correctCount} Soal Benar)`);
+        }
+      }).catch((e) => console.log("Belum ada riwayat / Firebase index dibatasi:", e));
+  }
 }
 
 // 105-Item Simulator Controllers
@@ -2127,13 +2109,13 @@ function simulatedPaymentSuccess() {
   closePaymentModal();
   showAlert("Pembayaran Rp 5.000 sukses dideteksi! Akses Tryout Premium Part 1 Telah Diaktifkan.");
 
-  if (currentUser) {
+  if (currentUser && typeof db !== 'undefined' && db !== null) {
     db.collection('artifacts').doc(appId).collection('users').doc(currentUser.uid).collection('transactions').add({
       product: "Tryout Premium SKD Part 1",
       price: 5000,
       status: "SUCCESS",
       timestamp: firebase.firestore.FieldValue.serverTimestamp()
-    });
+    }).catch(e => console.error(e));
   }
 
   document.getElementById('tryout-purchase-screen').classList.add('hidden');
@@ -2145,7 +2127,7 @@ function startSimulatorExam() {
   currentSimIndex = 0;
   simAnswers = {};
   simDoubtful = {};
-  simTimeLeft = 90 * 60; // 90 menit
+  simTimeLeft = 90 * 60;
 
   renderSimulatorQuestion();
   renderSimulatorNavGrid();
@@ -2232,7 +2214,6 @@ function prevSimQuestion() {
   }
 }
 
-// Navigasi lanjut soal simulasi
 function nextSimQuestion() {
   if (currentSimIndex < simQuestions.length - 1) {
     currentSimIndex++;
@@ -2240,6 +2221,7 @@ function nextSimQuestion() {
   }
 }
 
+// Render navigasi lembar jawaban simulator
 function renderSimulatorNavGrid() {
   const grid = document.getElementById('sim-navigation-grid');
   if (!grid) return;
@@ -2321,13 +2303,13 @@ function submitSimulatorTest() {
     document.getElementById('tryout-simulator-panel').classList.add('hidden');
     document.getElementById('tryout-results-panel').classList.remove('hidden');
 
-    if (currentUser) {
+    if (currentUser && typeof db !== 'undefined' && db !== null) {
       db.collection('artifacts').doc(appId).collection('users').doc(currentUser.uid).collection('tryout_results').add({
         correctAnswers: correct,
         wrongAnswers: wrong,
         status: passed ? "PASS" : "FAIL",
         timestamp: firebase.firestore.FieldValue.serverTimestamp()
-      });
+      }).catch(e => console.error(e));
     }
   }
 }
@@ -2339,56 +2321,79 @@ function restartSimulatorTest() {
 }
 
 // ==========================================
-// ONLOAD SYSTEM INITIALIZATION
+// ONLOAD SYSTEM INITIALIZATION & FIREBASE INIT
 // ==========================================
 window.onload = function() {
-  lucide.createIcons();
-  
-  // Deteksi status autentikasi dari Firebase
-  auth.onAuthStateChanged((user) => {
-    if (user) {
-      currentUser = user;
-      const profile = document.getElementById('user-profile');
-      const mobileProfile = document.getElementById('mobile-user-profile');
-      const authBtns = document.getElementById('auth-buttons');
-      const mobileAuthBtns = document.getElementById('mobile-auth-buttons');
-
-      if (profile) profile.classList.remove('hidden');
-      if (mobileProfile) mobileProfile.classList.remove('hidden');
-      if (authBtns) authBtns.classList.add('hidden');
-      if (mobileAuthBtns) mobileAuthBtns.classList.add('hidden');
-      
-      const emailDisplay = document.getElementById('user-display-email');
-      const mobileEmailDisplay = document.getElementById('mobile-user-email');
-      if (emailDisplay) emailDisplay.innerText = user.email;
-      if (mobileEmailDisplay) mobileEmailDisplay.innerText = user.email;
-      
-      const payEmailInput = document.getElementById('pay-email');
-      if (payEmailInput) payEmailInput.value = user.email;
-      
-      loadUserData(user.uid);
-    } else {
-      currentUser = null;
-      const profile = document.getElementById('user-profile');
-      const mobileProfile = document.getElementById('mobile-user-profile');
-      const authBtns = document.getElementById('auth-buttons');
-      const mobileAuthBtns = document.getElementById('mobile-auth-buttons');
-
-      if (profile) profile.classList.add('hidden');
-      if (mobileProfile) mobileProfile.classList.add('hidden');
-      if (authBtns) authBtns.classList.remove('hidden');
-      if (mobileAuthBtns) mobileAuthBtns.classList.remove('hidden');
+  // Amankan pemuatan ikon Lucide
+  if (typeof lucide !== 'undefined') {
+    try {
+      lucide.createIcons();
+    } catch (e) {
+      console.error("Gagal memuat ikon Lucide:", e);
     }
-  });
-
-  // Render Promo & Buku ke UI
-  renderPromoCodes();
-  renderBooks();
-
-  // ROUTING AWAL: Mengatur halaman berdasarkan URL Hash saat pertama kali dimuat
-  const initialView = window.location.hash.replace('#', '') || 'home';
-  navigateTo(initialView, false);
+  } else {
+    console.warn("Lucide Icons tidak terdeteksi.");
+  }
   
-  // Set representasi awal riwayat
-  history.replaceState({ view: initialView }, "", window.location.hash || '#home');
+  // Amankan pemuatan status autentikasi dari Firebase
+  if (typeof auth !== 'undefined' && auth !== null) {
+    try {
+      auth.onAuthStateChanged((user) => {
+        if (user) {
+          currentUser = user;
+          const profile = document.getElementById('user-profile');
+          const mobileProfile = document.getElementById('mobile-user-profile');
+          const authBtns = document.getElementById('auth-buttons');
+          const mobileAuthBtns = document.getElementById('mobile-auth-buttons');
+
+          if (profile) profile.classList.remove('hidden');
+          if (mobileProfile) mobileProfile.classList.remove('hidden');
+          if (authBtns) authBtns.classList.add('hidden');
+          if (mobileAuthBtns) mobileAuthBtns.classList.add('hidden');
+          
+          const emailDisplay = document.getElementById('user-display-email');
+          const mobileEmailDisplay = document.getElementById('mobile-user-email');
+          if (emailDisplay) emailDisplay.innerText = user.email;
+          if (mobileEmailDisplay) mobileEmailDisplay.innerText = user.email;
+          
+          const payEmailInput = document.getElementById('pay-email');
+          if (payEmailInput) payEmailInput.value = user.email;
+          
+          loadUserData(user.uid);
+        } else {
+          currentUser = null;
+          const profile = document.getElementById('user-profile');
+          const mobileProfile = document.getElementById('mobile-user-profile');
+          const authBtns = document.getElementById('auth-buttons');
+          const mobileAuthBtns = document.getElementById('mobile-auth-buttons');
+
+          if (profile) profile.classList.add('hidden');
+          if (mobileProfile) mobileProfile.classList.add('hidden');
+          if (authBtns) authBtns.classList.remove('hidden');
+          if (mobileAuthBtns) mobileAuthBtns.classList.remove('hidden');
+        }
+      });
+    } catch (e) {
+      console.error("Firebase auth handler error:", e);
+    }
+  } else {
+    console.warn("Firebase Auth tidak terdeteksi atau gagal dimuat.");
+  }
+
+  // Render Promo & Buku ke UI secara aman
+  try {
+    renderPromoCodes();
+    renderBooks();
+  } catch (e) {
+    console.error("Render komponen UI gagal:", e);
+  }
+
+  // ROUTING AWAL secara aman
+  try {
+    const initialView = window.location.hash.replace('#', '') || 'home';
+    navigateTo(initialView, false);
+    history.replaceState({ view: initialView }, "", window.location.hash || '#home');
+  } catch (e) {
+    console.error("Inisialisasi navigasi awal gagal:", e);
+  }
 };
