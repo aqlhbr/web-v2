@@ -1667,6 +1667,30 @@ const ADMIN_CONFIG = {
   ]
 };
 
+}
+  
+  <!-- ========================================== -->
+  <!-- FIREBASE CONFIGURATION & INITIALIZATION -->
+  <!-- ========================================== -->
+    const firebaseConfig = {
+      apiKey: "AIzaSyBJamJtUuOxMZ4I0YFVHeINwg33ntFc8ys",
+      authDomain: "infoprivatalfaiz.firebaseapp.com",
+      projectId: "infoprivatalfaiz",
+      storageBucket: "infoprivatalfaiz.firebasestorage.app",
+      messagingSenderId: "1091495950544",
+      appId: "1:1091495950544:web:23cd3be0d61e8b865dc6d5",
+      measurementId: "G-MTY0N4JM20"
+    }; 
+
+    // Initialize Firebase
+    if (!firebase.apps.length) {
+      firebase.initializeApp(firebaseConfig);
+    }
+    const auth = firebase.auth();
+    const db = firebase.firestore();
+    const appId = "infoprivatalfaiz";
+ },
+
 // Global State
 let currentUser = null;
 let authMode = 'login';
