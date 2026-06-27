@@ -1,0 +1,39 @@
+/* Custom Scrollbar Premium Al Faiz */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+::-webkit-scrollbar-thumb {
+  background: #800000;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #facc15;
+}
+
+/* Kustomisasi Tambahan Navigasi Ujian CAT */
+#sim-navigation-grid button {
+  transition: all 0.2s ease-in-out;
+}
+
+#sim-navigation-grid button:hover {
+  filter: brightness(1.2);
+}
+
+/* Transisi Halus Perpindahan Halaman (SPA) */
+.view-section {
+  animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
