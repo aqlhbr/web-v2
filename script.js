@@ -1973,8 +1973,7 @@ function handleAuthSubmit(e) {
       const token = await grecaptcha.enterprise.execute('6LcsbjktAAAAAI3fvXKTsWqeSZ3JBJY53qdBCr7H', {action: 'LOGIN'});
     });
   }
-</script>
-
+  
   if (typeof auth !== 'undefined' && auth !== null) {
     if (authMode === 'login') {
       auth.signInWithEmailAndPassword(emailInput, passInput)
