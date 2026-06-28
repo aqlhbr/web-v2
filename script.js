@@ -1947,6 +1947,8 @@ function toggleAuthMode() {
   openAuthModal(authMode === 'login' ? 'register' : 'login');
 }
 
+
+
 function handleAuthSubmit(e) {
   e.preventDefault();
   
@@ -1964,6 +1966,14 @@ function handleAuthSubmit(e) {
     showAlert("Gagal: Kata sandi minimal harus 6 karakter.");
     return;
   }
+  
+  function onClick(e) {
+    e.preventDefault();
+    grecaptcha.enterprise.ready(async () => {
+      const token = await grecaptcha.enterprise.execute('6LcsbjktAAAAAI3fvXKTsWqeSZ3JBJY53qdBCr7H', {action: 'LOGIN'});
+    });
+  }
+</script>
 
   if (typeof auth !== 'undefined' && auth !== null) {
     if (authMode === 'login') {
